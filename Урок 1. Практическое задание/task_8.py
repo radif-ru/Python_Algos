@@ -16,3 +16,17 @@
 Он просто позволяет протестировать условие в одной строке,
 заменяя многострочное if-else, делая код компактным.
 """
+
+try:
+    USER_YEAR = int(input("Введите год: "))
+    if (USER_YEAR % 4 == 0 and USER_YEAR % 100 != 0) or USER_YEAR % 400 == 0:
+        print("Год являетя високосным")
+    else:
+        print("Год не является високосным!")
+
+    USER_YEAR = int(input("Введите год: "))
+    print("Год являетя високосным") if (USER_YEAR % 4 == 0 and USER_YEAR %
+                                        100 != 0) or USER_YEAR % 400 == 0 else print("Год не является високосным!")
+except ValueError as exception:
+    print(f"Введите корректный год, используя только цифры\n"
+          f"{exception}")
