@@ -30,8 +30,3 @@ def num_of_multiples(multiples, before):
 
 
 num_of_multiples(2, 9)
-
-
-# Так и не понял как тут избавиться при проверке в Pylint от?:
-# task_1.py:19:0: R1710: Either all return statements in
-# a function should return an expression, or none of them should. (inconsistent-return-statements)

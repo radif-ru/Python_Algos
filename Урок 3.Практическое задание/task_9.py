@@ -51,8 +51,3 @@ try:
     matrix(ROW_MATRIX, COL_MATRIX)
 except ValueError as exception:
     print("Необходимо вводить положительное количество")
-
-
-# Почему ругается pylint? Как исправить?:
-# task_8.py:41:0: R1710: Either all return statements in a function should return an expression,
-# or none of them should. (inconsistent-return-statements)

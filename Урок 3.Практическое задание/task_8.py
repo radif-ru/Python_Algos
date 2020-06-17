@@ -66,7 +66,3 @@ def matrix(row=5, col=4, row_idx=0):
 
 MATRIX = []
 matrix()
-
-# Почему ругается pylint? Как исправить?:
-# task_8.py:41:0: R1710: Either all return statements in a function should return an expression,
-# or none of them should. (inconsistent-return-statements)
