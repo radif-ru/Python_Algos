@@ -16,8 +16,8 @@ import random
 
 def bubble_sort(orig_list, reverse=False):
     n = 1
+    flag = True
     while n < len(orig_list):
-        flag = True
         for i in range(len(orig_list) - n):
             if not reverse:
                 if orig_list[i] < orig_list[i + 1]:
