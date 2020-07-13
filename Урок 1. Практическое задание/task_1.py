@@ -13,3 +13,23 @@
 Подсказка: для получения отдельных цифр числа используйте арифм. операции
 и НЕ ИСПОЛЬЗУЙТЕ операции с массивами
 """
+
+try:
+    USER_NUM = int(input("Введите целое 3-х значное число: "))
+    if (USER_NUM / 1000) != 0 or USER_NUM == 0:
+        raise ValueError("Ваше число не 3-х значное!")
+except ValueError as exception:
+    print(
+        f"Ошибка входных данных! Используйте только целое число! \n{exception}")
+else:
+    NUM_3 = USER_NUM % 10
+    NUM_2 = (USER_NUM // 10) % 10
+    NUM_1 = USER_NUM // 100
+
+    SUM = NUM_1 + NUM_2 + NUM_3
+    MUL = NUM_1 * NUM_2 * NUM_3
+
+    print(
+        f"Сумма цифр трёхзначного числа: {SUM}",
+        f"Произведение: {MUL}",
+        sep="\n", end="\n" + "*" * 33)
